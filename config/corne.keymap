@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-        conditional_layers {
+        cond_layers {
             compatible = "zmk,conditional-layers";
             tri_layer {
                 if-layers = <1 2>;
