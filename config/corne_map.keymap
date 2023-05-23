@@ -23,10 +23,10 @@
 
                 lower_layer {
                         bindings = <
-   &kp TAB    &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp QMARK        &trans  &kp N1  &kp N2  &kp N3  &trans  &bt BT_CLR
-   &kp LCTRL  &trans  &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &trans           &kp LT  &kp N4  &kp N5  &kp N6  &trans  &bt BT_SEL 0
-   &sk LSHFT  &trans  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)       &kp GT  &kp N7  &kp N8  &kp N9  &kp N0  &bt BT_SEL 1
-                          	      &kp LGUI    &trans      &kp SPACE        &kp RET &trans  &kp RALT
+   &kp TAB    &trans     &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp QMARK        &trans  &kp N1  &kp N2  &kp N3  &trans  &bt BT_CLR
+   &kp LCTRL  &kp UNDER  &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &trans           &kp LT  &kp N4  &kp N5  &kp N6  &trans  &bt BT_SEL 0
+   &sk LSHFT  &trans     &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)       &kp GT  &kp N7  &kp N8  &kp N9  &kp N0  &bt BT_SEL 1
+                          	         &kp LGUI    &trans      &kp SPACE        &kp RET &trans  &kp RALT
                         >;
                 };
 
@@ -35,7 +35,7 @@
    &kp TAB    &kp BSLH   &kp FSLH   &kp STAR     &kp PIPE   &kp HASH       &kp QMARK  &kp EXCL  &kp CARET  &kp AMPS   &kp AT    &kp BSPC
    &kp LCTRL  &kp PRCNT  &kp MINUS  &kp KP_PLUS  &kp EQUAL  &kp DQT        &kp LPAR   &kp RPAR  &kp LBRC   &kp RBRC   &kp SEMI  &kp RCTRL
    &sk LSHFT  &kp LEFT   &kp DOWN   &kp UP       &kp RIGHT  &kp SQT        &kp LBKT   &kp RBKT  &kp TILDE  &kp GRAVE  &kp DOT   &kp CAPS
-                    	           &kp LGUI     &trans     &kp SPACE       &kp RET    &trans    &kp RALT
+                    	            &kp LGUI     &trans     &kp SPACE       &kp RET    &trans    &kp RALT
                         >;
                 };
 
