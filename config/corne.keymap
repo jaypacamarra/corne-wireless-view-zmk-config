@@ -23,10 +23,10 @@
 
         default_layer {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E     &kp R  &kp T        &kp T      &kp Y  &kp U            &kp I      &kp O       &kp P
-&kp LEFT_CONTROL  &kp A  &kp S  &kp D     &kp F  &kp G        &kp G      &kp H  &kp J            &kp K      &kp L       &kp BACKSPACE
-&sk LEFT_SHIFT    &kp Z  &kp X  &kp C     &kp V  &kp B        &kp B      &kp N  &kp M            &kp COMMA  &kp PERIOD  &kp DEL
-                                &kp LWIN  &to 1  &kp SPACE    &kp ENTER  &to 2  &kp RIGHT_SHIFT
+&kp TAB           &kp Q  &kp W  &kp E     &kp R  &kp T        &kp T      &kp Y  &kp U                   &kp I      &kp O       &kp P
+&kp LEFT_CONTROL  &kp A  &kp S  &kp D     &kp F  &kp G        &kp G      &kp H  &kp J                   &kp K      &kp L       &kp BACKSPACE
+&sk LEFT_SHIFT    &kp Z  &kp X  &kp C     &kp V  &kp B        &kp B      &kp N  &kp M                   &kp COMMA  &kp PERIOD  &kp DEL
+                                &kp LWIN  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &mt RIGHT_SHIFT ESCAPE
             >;
         };
 
@@ -35,7 +35,7 @@
 &none       &kp F1     &kp F2            &kp F3             &kp F4                &kp F5           &kp F6            &kp F7                 &kp F8           &kp F9             &kp F10    &kp CAPSLOCK
 &kp TILDE   &kp MINUS  &kp EQUAL         &kp DOUBLE_QUOTES  &kp SLASH             &kp BACKSLASH    &none             &kp LEFT               &kp DOWN         &kp UP_ARROW       &kp RIGHT  &none
 &kp LSHIFT  &kp GRAVE  &kp LEFT_BRACKET  &kp LEFT_BRACE     &kp LEFT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans     &none
-                                         &kp LEFT_WIN       &to 1                 &kp SPACE        &kp RET           &to 2                  &kp RSHIFT
+                                         &kp LEFT_WIN       &mo 1                 &kp SPACE        &kp RET           &mo 2                  &kp RSHIFT
             >;
         };
 
@@ -44,16 +44,16 @@
 &kp TAB         &kp K_MUTE      &kp PRINTSCREEN    &kp K_PLAY_PAUSE  &none        &none        &none    &kp N1  &kp N2           &kp N3  &kp PAGE_UP    &none
 &kp LCTRL       &kp K_PREVIOUS  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP   &kp K_NEXT   &none        &none    &kp N4  &kp N5           &kp N6  &kp PAGE_DOWN  &none
 &kp LEFT_SHIFT  &none           &none              &kp K_COPY        &kp K_PASTE  &none        &none    &kp N7  &kp N8           &kp N9  &kp N0         &none
-                                                   &kp LEFT_WIN      &to 1        &kp SPACE    &kp RET  &to 2   &kp RIGHT_SHIFT
+                                                   &kp LEFT_WIN      &mo 1        &kp SPACE    &kp RET  &mo 2   &kp RIGHT_SHIFT
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &none   &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans        &trans        &trans          &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans     &trans  &trans      &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans     &trans  &trans      &trans  &none   &bt BT_CLR
+&trans  &trans        &trans        &trans        &trans        &trans          &trans     &trans  &trans      &trans  &trans  &trans
+                                    &kp LGUI      &mo 1         &kp SPACE       &kp ENTER  &mo 2   &kp RSHIFT
             >;
         };
     };
